@@ -65,6 +65,11 @@ footer{text-align:center;color:var(--dim);font-size:11.5px;padding:34px 0 0;bord
 .dl a:active{background:var(--amber);color:#000}
 .zipbtn{display:block;text-align:center;background:var(--blue);color:#fff;text-decoration:none;font-weight:700;font-size:15px;padding:15px;border-radius:12px;margin-top:14px}
 .zipbtn:active{opacity:.6}
+.carou{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:6px}
+.carou a{text-decoration:none;display:block}
+.carou img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:8px;border:1px solid var(--line);display:block}
+.carou span{display:block;font-size:10.5px;color:var(--dim);text-align:center;padding:5px 0 2px}
+@media(max-width:520px){.carou{grid-template-columns:repeat(2,1fr)}}
 .iosnote{font-size:12px;color:var(--dim);background:#12121a;border:1px dashed var(--line);border-radius:10px;padding:10px 12px;margin-top:12px}
 .grid12{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}
 .grid12 div{aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9.5px;text-align:center;padding:3px;line-height:1.25;color:#0a0a0c;font-weight:600}
@@ -90,9 +95,9 @@ footer{text-align:center;color:var(--dim);font-size:11.5px;padding:34px 0 0;bord
   <div class="row"><div class="k">인스타 / 틱톡</div><div class="v"><button class="copy" data-c="ulzzangcam">ulzzangcam</button></div></div>
   <div class="row"><div class="k">표시 이름</div><div class="v"><button class="copy" data-c="얼짱캠 2003 · Y2K 뽀샤시 카메라">얼짱캠 2003 · Y2K 뽀샤시 카메라</button></div></div>
   <div class="row"><div class="k">인스타 바이오</div><div class="v"><pre class="bio" data-c="📼 내 폰이 2003년 웹캠으로
-VGA 뽀샤시 · 픽셀 하트 · 날짜 도장
+저화질 뽀샤시 · 픽셀 하트 · 날짜 도장
 #얼짱캠 태그하면 리그램해드려요 ↓">📼 내 폰이 2003년 웹캠으로
-VGA 뽀샤시 · 픽셀 하트 · 날짜 도장
+저화질 뽀샤시 · 픽셀 하트 · 날짜 도장
 #얼짱캠 태그하면 리그램해드려요 ↓</pre><div class="hint">탭하면 복사 · 150자 제한</div></div></div>
   <div class="row"><div class="k">틱톡 바이오</div><div class="v"><pre class="bio" data-c="📼 2003년 웹캠 감성 셀카
 App Store · 얼짱캠 검색
@@ -190,7 +195,54 @@ App Store · 키라키라 검색
 </div>
 </div>
 
-<h2>3 · 인스타그램 생성 순서</h2>
+<h2>3 · 첫 캐러셀 — 얼짱캠 (8장)</h2>
+<div class="card ulz">
+<p style="margin:0 0 12px;font-size:13.5px;color:var(--dim)">1080×1350 (4:5) · 앱스토어 미리보기 원본 1320×2868 사용 · 순서대로 올리면 됩니다</p>
+<div class="carou">
+  <a href="carousel/01_hook.jpg" download><img src="carousel/01_hook.jpg"><span>1 후킹</span></a>
+  <a href="carousel/02_classic_hearts.jpg" download><img src="carousel/02_classic_hearts.jpg"><span>2 도트 하트</span></a>
+  <a href="carousel/03_dawn_dots.jpg" download><img src="carousel/03_dawn_dots.jpg"><span>3 새벽 모니터광</span></a>
+  <a href="carousel/04_fluorescent_chat.jpg" download><img src="carousel/04_fluorescent_chat.jpg"><span>4 노란 형광등</span></a>
+  <a href="carousel/05_classic_camcorder.jpg" download><img src="carousel/05_classic_camcorder.jpg"><span>5 캠코더</span></a>
+  <a href="carousel/06_gif_recording.jpg" download><img src="carousel/06_gif_recording.jpg"><span>6 움짤</span></a>
+  <a href="carousel/07_gallery.jpg" download><img src="carousel/07_gallery.jpg"><span>7 갤러리</span></a>
+  <a href="carousel/08_cta.jpg" download><img src="carousel/08_cta.jpg"><span>8 CTA·QR</span></a>
+</div>
+<a class="zipbtn" href="carousel/ulzzangcam-carousel.zip" download>⬇︎ 캐러셀 8장 ZIP 받기 (5.4MB)</a>
+<div class="iosnote">📱 아이폰은 이미지 <b>길게 눌러 “사진에 추가”</b> → 인스타 업로드 시 <b>1~8 순서대로</b> 선택하세요.</div>
+
+<h2 style="margin:24px 0 8px">게시물 캡션</h2>
+<pre class="bio" data-c="📼 내 폰이 2003년 웹캠이 되는 법
+
+집 컴퓨터 켜고 화질 낮은 웹캠으로 찍던 그 시절 셀카.
+얼짱캠 2003 하나면 그 감성 그대로 돌아가요.
+
+· 원조 뽀샤시 / 새벽 모니터광 / 노란 형광등 필터
+· 도트 하트 · 반짝이 · 레트로 스티커
+· 날짜 · 시간 도장 오버레이
+· 4연사 · 캠코더 · 움짤(GIF) 모드
+
+📲 App Store에 '얼짱캠' 검색
+#얼짱캠 태그하면 피드에 리그램해드려요 ✨
+
+#얼짱캠 #얼짱캠2003 #y2k #와이투케이 #뽀샤시 #레트로카메라 #디카감성 #웹캠감성 #싸이월드감성 #셀카앱 #카메라앱 #y2kaesthetic #ulzzang #감성사진 #셀카">📼 내 폰이 2003년 웹캠이 되는 법
+
+집 컴퓨터 켜고 화질 낮은 웹캠으로 찍던 그 시절 셀카.
+얼짱캠 2003 하나면 그 감성 그대로 돌아가요.
+
+· 원조 뽀샤시 / 새벽 모니터광 / 노란 형광등 필터
+· 도트 하트 · 반짝이 · 레트로 스티커
+· 날짜 · 시간 도장 오버레이
+· 4연사 · 캠코더 · 움짤(GIF) 모드
+
+📲 App Store에 '얼짱캠' 검색
+#얼짱캠 태그하면 피드에 리그램해드려요 ✨
+
+#얼짱캠 #얼짱캠2003 #y2k #와이투케이 #뽀샤시 #레트로카메라 #디카감성 #웹캠감성 #싸이월드감성 #셀카앱 #카메라앱 #y2kaesthetic #ulzzang #감성사진 #셀카</pre>
+<div class="hint" style="text-align:left">탭하면 전체 복사 · 해시태그 15개 (첫 3개만 검색 노출에 유의미, 나머지는 커뮤니티용)</div>
+</div>
+
+<h2>4 · 인스타그램 생성 순서</h2>
 <div class="card">
 <ol class="steps">
   <li><b>모바일 앱</b>에서 로그아웃 → 새 계정 만들기 <span class="no">(웹 가입 X — 차단률 높음)</span></li>
@@ -204,7 +256,7 @@ App Store · 키라키라 검색
 </ol>
 </div>
 
-<h2>4 · 틱톡 — 비즈니스 전환 <span class="no">하지 마세요</span></h2>
+<h2>5 · 틱톡 — 비즈니스 전환 <span class="no">하지 마세요</span></h2>
 <div class="card">
 <table>
 <tr><th></th><th>크리에이터</th><th>비즈니스</th></tr>
@@ -215,7 +267,7 @@ App Store · 키라키라 검색
 <p style="font-size:13.5px;color:var(--dim);margin:14px 0 0">카메라 앱은 트렌딩 사운드가 오가닉 도달의 핵심. 링크 하나 얻자고 그걸 버리면 손해입니다.<br>→ <b style="color:#fff">크리에이터 계정 유지</b>, 광고는 business.tiktok.com에서 별도 집행, 우리 영상은 <b style="color:#fff">Spark Ads 권한 코드</b>로 밀기.<br>→ 틱톡 핸들은 <b style="color:#fff">30일에 1회만</b> 변경 가능하니 처음에 확정.</p>
 </div>
 
-<h2>5 · 이미지 스펙</h2>
+<h2>6 · 이미지 스펙</h2>
 <div class="card">
 <table>
 <tr><th>용도</th><th>사이즈</th><th>주의</th></tr>
@@ -229,7 +281,7 @@ App Store · 키라키라 검색
 </table>
 </div>
 
-<h2>6 · 광고 전 워밍업 14일</h2>
+<h2>7 · 광고 전 워밍업 14일</h2>
 <div class="card">
 <table>
 <tr><th>일차</th><th>할 일</th></tr>
@@ -245,7 +297,7 @@ App Store · 키라키라 검색
 <p style="font-size:13px;color:#ff9b9b;margin:16px 0 0"><b>절대 금지</b> — 생성 당일 광고 / 광고 시작 후 핸들 변경 / 팔로워 구매 / 두 계정 같은 소재 재사용 / 틱톡 워터마크 영상을 릴스에 업로드</p>
 </div>
 
-<h2>7 · 하이라이트</h2>
+<h2>8 · 하이라이트</h2>
 <div class="card">
 <table>
 <tr><th>얼짱캠</th><td>사용법 · 필터 · 움짤 · 리그램 · 업데이트<br><span style="color:var(--dim);font-size:12px">커버: 앰버 배경 + 네이비 픽셀 아이콘</span></td></tr>
