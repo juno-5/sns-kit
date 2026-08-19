@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>SNS 계정 셋업 — 얼짱캠 / 키라키라</title>
+<style>
+:root{--amber:#FFB02E;--blue:#0896FE;--navy:#152040;--lime:#B7FF00;--bg:#0d0d0f;--card:#17171b;--line:#2a2a31;--tx:#e9e9ee;--dim:#8b8b96}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.65 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif;padding-bottom:60px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding:36px 0 20px;border-bottom:1px solid var(--line);margin-bottom:8px}
+h1{font-size:23px;margin:0 0 6px;letter-spacing:-.5px}
+.sub{color:var(--dim);font-size:13px}
+.warn{background:#2a1a10;border:1px solid #5a3a1a;color:#ffc98a;padding:11px 14px;border-radius:10px;font-size:13px;margin:18px 0}
+h2{font-size:15px;margin:34px 0 12px;color:var(--dim);font-weight:600;letter-spacing:.4px;text-transform:uppercase}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:14px}
+.card.ulz{border-top:3px solid var(--amber)}
+.card.kira{border-top:3px solid var(--lime)}
+.apphead{display:flex;align-items:center;gap:13px;margin-bottom:16px}
+.apphead img{width:56px;height:56px;border-radius:50%;flex:0 0 auto}
+.apphead b{display:block;font-size:16px}
+.apphead span{color:var(--dim);font-size:12px}
+.row{display:flex;justify-content:space-between;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);align-items:flex-start}
+.row:last-child{border:0}
+.k{color:var(--dim);font-size:12.5px;flex:0 0 82px;padding-top:2px}
+.v{flex:1;text-align:right;word-break:break-all}
+.copy{background:#232329;border:1px solid var(--line);color:var(--tx);border-radius:8px;padding:6px 10px;font:600 13px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;cursor:pointer;display:inline-block}
+.copy:active{background:var(--amber);color:#000}
+.copy.done{background:#1d7a3f;border-color:#1d7a3f;color:#fff}
+pre.bio{background:#0a0a0c;border:1px solid var(--line);border-radius:10px;padding:12px;margin:8px 0 0;white-space:pre-wrap;font:13px/1.7 -apple-system,sans-serif;text-align:left;cursor:pointer}
+pre.bio:active{border-color:var(--amber)}
+.hint{color:var(--dim);font-size:11.5px;margin-top:5px;text-align:right}
+.pfps{display:flex;gap:14px;flex-wrap:wrap;margin-top:6px}
+.pfp{text-align:center;flex:1;min-width:96px}
+.pfp img{width:90px;height:90px;border-radius:50%;border:1px solid var(--line);display:block;margin:0 auto 7px}
+.pfp small{font-size:11px;color:var(--dim);display:block;line-height:1.45}
+.pfp.pick small b{color:var(--amber)}
+.pfp a{color:var(--blue);font-size:11px;text-decoration:none}
+table{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--dim);font-weight:600;font-size:11.5px;text-transform:uppercase}
+code{background:#232329;padding:2px 6px;border-radius:5px;font:12.5px ui-monospace,Menlo,monospace}
+.sw{display:inline-block;width:13px;height:13px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid #3a3a44}
+ol.steps{padding-left:0;list-style:none;counter-reset:s;margin:0}
+ol.steps li{counter-increment:s;position:relative;padding:11px 0 11px 36px;border-bottom:1px solid var(--line);font-size:14px}
+ol.steps li:last-child{border:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:23px;height:23px;border-radius:50%;background:#232329;color:var(--dim);font:600 12px/23px sans-serif;text-align:center}
+ol.steps b{color:#fff}
+.no{color:#ff7b7b}
+.yes{color:#6ee7a0}
+footer{text-align:center;color:var(--dim);font-size:11.5px;padding:34px 0 0;border-top:1px solid var(--line);margin-top:34px}
+.grid12{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;margin-top:8px}
+.grid12 div{aspect-ratio:1;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:9.5px;text-align:center;padding:3px;line-height:1.25;color:#0a0a0c;font-weight:600}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>SNS 계정 셋업 가이드</h1>
+  <div class="sub">얼짱캠 2003 · 키라키라 스튜디오 &nbsp;|&nbsp; MAYACREW Inc.</div>
+</header>
+
+<div class="warn">🔒 이 페이지는 검색엔진 비노출(noindex)이지만 기술적으로 공개 URL입니다. <b>계정 생성 완료 후 삭제</b>하세요. 아래 핸들은 아직 미등록 상태라 선점 위험이 있습니다.</div>
+
+<h2>1 · 계정 정보</h2>
+
+<div class="card ulz">
+  <div class="apphead">
+    <img src="img/ulzzangcam_pfp_circlesafe_1080.png" alt="">
+    <div><b>얼짱캠 2003</b><span>Y2K 뽀샤시 카메라 · 저화질 웹캠 감성</span></div>
+  </div>
+  <div class="row"><div class="k">인스타 / 틱톡</div><div class="v"><button class="copy" data-c="ulzzangcam">ulzzangcam</button></div></div>
+  <div class="row"><div class="k">표시 이름</div><div class="v"><button class="copy" data-c="얼짱캠 2003 · Y2K 뽀샤시 카메라">얼짱캠 2003 · Y2K 뽀샤시 카메라</button></div></div>
+  <div class="row"><div class="k">인스타 바이오</div><div class="v"><pre class="bio" data-c="📼 내 폰이 2003년 웹캠으로
+VGA 뽀샤시 · 픽셀 하트 · 날짜 도장
+#얼짱캠 태그하면 리그램해드려요 ↓">📼 내 폰이 2003년 웹캠으로
+VGA 뽀샤시 · 픽셀 하트 · 날짜 도장
+#얼짱캠 태그하면 리그램해드려요 ↓</pre><div class="hint">탭하면 복사 · 150자 제한</div></div></div>
+  <div class="row"><div class="k">틱톡 바이오</div><div class="v"><pre class="bio" data-c="📼 2003년 웹캠 감성 셀카
+App Store · 얼짱캠 검색
+#얼짱캠 태그하면 리그램">📼 2003년 웹캠 감성 셀카
+App Store · 얼짱캠 검색
+#얼짱캠 태그하면 리그램</pre><div class="hint">탭하면 복사 · 80자 제한</div></div></div>
+  <div class="row"><div class="k">카테고리</div><div class="v">앱 페이지</div></div>
+  <div class="row"><div class="k">컬러</div><div class="v"><span class="sw" style="background:#FFB02E"></span><code>#FFB02E</code> <span class="sw" style="background:#0896FE"></span><code>#0896FE</code> <span class="sw" style="background:#152040"></span><code>#152040</code></div></div>
+  <div class="row"><div class="k">방어 선점</div><div class="v"><code>ulzzangcam2003</code> <code>ulzzang.cam</code></div></div>
+
+  <h2 style="margin:22px 0 8px">프로필 이미지 — 3안 중 택1</h2>
+  <div class="pfps">
+    <div class="pfp"><img src="img/ulzzangcam_pfp_full_1080.png"><small>A. 원본 그대로<br><span class="no">모서리 15.4% 잘림</span></small><a href="img/ulzzangcam_pfp_full_1080.png" download>다운로드</a></div>
+    <div class="pfp pick"><img src="img/ulzzangcam_pfp_circlesafe_1080.png"><small><b>B. 원형 대응 ★추천</b><br>78% 축소 + 앰버 배경</small><a href="img/ulzzangcam_pfp_circlesafe_1080.png" download>다운로드</a></div>
+    <div class="pfp"><img src="img/ulzzangcam_pfp_adaptive_1080.png"><small>C. 어댑티브<br>블루 배경 · 인상 다름</small><a href="img/ulzzangcam_pfp_adaptive_1080.png" download>다운로드</a></div>
+  </div>
+
+  <h2 style="margin:22px 0 8px">초기 피드 12칸</h2>
+  <div class="grid12" style="--c:#FFB02E">
+    <div style="background:#FFB02E">브랜드<br>소개</div><div style="background:#ffd79a">셀카</div><div style="background:#0896FE;color:#fff">필터 3종</div>
+    <div style="background:#ffd79a">셀카</div><div style="background:#0896FE;color:#fff">날짜도장</div><div style="background:#FFB02E">브랜드<br>소개</div>
+    <div style="background:#ffd79a">셀카</div><div style="background:#0896FE;color:#fff">GIF 캠코더</div><div style="background:#0896FE;color:#fff">픽셀 스티커</div>
+    <div style="background:#ffd79a">셀카</div><div style="background:#0896FE;color:#fff">사용법</div><div style="background:#FFB02E">브랜드<br>소개</div>
+  </div>
+  <div class="hint" style="text-align:left">결과물 5 : 기능 4 : 브랜드 3 · 브랜드 카드는 대각선 배치</div>
+</div>
+
+<div class="card kira">
+  <div class="apphead">
+    <img src="img/kirakirastudio_pfp_circlesafe_1080.png" alt="">
+    <div><b>키라키라 스튜디오</b><span>프리쿠라 부스 · 보정 29종 · 인생네컷</span></div>
+  </div>
+  <div class="row"><div class="k">인스타 / 틱톡</div><div class="v"><button class="copy" data-c="kirakirastudio.app">kirakirastudio.app</button></div></div>
+  <div class="row"><div class="k">표시 이름</div><div class="v"><button class="copy" data-c="키라키라 스튜디오 · 프리쿠라 인생네컷">키라키라 스튜디오 · 프리쿠라 인생네컷</button></div></div>
+  <div class="row"><div class="k">인스타 바이오</div><div class="v"><pre class="bio" data-c="✨ 내 손안의 프리쿠라 부스
+뽀샤시 필터 · 보정 29종 · 인생네컷
+#키라키라스튜디오 태그하면 리그램 ↓">✨ 내 손안의 프리쿠라 부스
+뽀샤시 필터 · 보정 29종 · 인생네컷
+#키라키라스튜디오 태그하면 리그램 ↓</pre><div class="hint">탭하면 복사 · 150자 제한</div></div></div>
+  <div class="row"><div class="k">틱톡 바이오</div><div class="v"><pre class="bio" data-c="✨ 내 폰이 프리쿠라 부스로
+App Store · 키라키라 검색
+#키라키라스튜디오 리그램">✨ 내 폰이 프리쿠라 부스로
+App Store · 키라키라 검색
+#키라키라스튜디오 리그램</pre><div class="hint">탭하면 복사 · 80자 제한</div></div></div>
+  <div class="row"><div class="k">카테고리</div><div class="v">앱 페이지</div></div>
+  <div class="row"><div class="k">컬러</div><div class="v"><span class="sw" style="background:#B7FF00"></span><code>#B7FF00</code> <span class="sw" style="background:#fff"></span><code>#FFFFFF</code> <span class="sw" style="background:#FF9ECF"></span><code>#FF9ECF</code></div></div>
+  <div class="row"><div class="k">방어 선점</div><div class="v"><code>kirakira.cam</code> <code>kirakirastudio.kr</code></div></div>
+
+  <h2 style="margin:22px 0 8px">프로필 이미지 — 2안 중 택1</h2>
+  <div class="pfps">
+    <div class="pfp"><img src="img/kirakirastudio_pfp_full_1080.png"><small>A. 원본 그대로<br><span class="no">모서리 12.1% 잘림</span></small><a href="img/kirakirastudio_pfp_full_1080.png" download>다운로드</a></div>
+    <div class="pfp pick"><img src="img/kirakirastudio_pfp_circlesafe_1080.png"><small><b>B. 원형 대응 ★추천</b><br>78% 축소 + 라임 배경</small><a href="img/kirakirastudio_pfp_circlesafe_1080.png" download>다운로드</a></div>
+    <div class="pfp"><img src="img/kirakira_logo_white.png" style="border-radius:8px;object-fit:contain;background:#000;padding:8px"><small>워드마크<br>소재 브랜딩용</small><a href="img/kirakira_logo_white.png" download>다운로드</a></div>
+  </div>
+
+  <h2 style="margin:22px 0 8px">초기 피드 12칸</h2>
+  <div class="grid12">
+    <div style="background:#B7FF00">브랜드<br>소개</div><div style="background:#e6ffb0">네컷</div><div style="background:#fff">보정 전/후</div>
+    <div style="background:#e6ffb0">셀카</div><div style="background:#fff">스티커 데코</div><div style="background:#B7FF00">브랜드<br>소개</div>
+    <div style="background:#e6ffb0">네컷</div><div style="background:#fff">얼굴별 보정</div><div style="background:#fff">GIF 움짤</div>
+    <div style="background:#e6ffb0">셀카</div><div style="background:#fff">레이아웃</div><div style="background:#B7FF00">브랜드<br>소개</div>
+  </div>
+</div>
+
+<h2>2 · 인스타그램 생성 순서</h2>
+<div class="card">
+<ol class="steps">
+  <li><b>모바일 앱</b>에서 로그아웃 → 새 계정 만들기 <span class="no">(웹 가입 X — 차단률 높음)</span></li>
+  <li><b>이메일</b>로 가입 <span class="no">(전화번호 X)</span> · 개인계정에 "계정 추가"로 붙이지 말 것</li>
+  <li>핸들·생년월일 입력 → 가입 직후 <b>2FA 설정</b></li>
+  <li>설정 → 계정 유형 및 도구 → 프로페셔널 → <b>비즈니스</b> <span class="no">(크리에이터 아님)</span> → 카테고리 <b>앱 페이지</b></li>
+  <li>연락처: 이메일 ON <code>support@mayacrew.co.kr</code> / 전화·주소 OFF</li>
+  <li>액션 버튼 → <b>앱 다운로드</b> + 어트리뷰션 원링크</li>
+  <li>business.facebook.com → 페이지 연결 · 앱 등록(SKAN) · <b>광고 계정은 앱별로 분리</b></li>
+  <li>두 계정은 <b>24시간 간격</b>으로 생성 · 프로필은 2~3일 나눠 채우기</li>
+</ol>
+</div>
+
+<h2>3 · 틱톡 — 비즈니스 전환 <span class="no">하지 마세요</span></h2>
+<div class="card">
+<table>
+<tr><th></th><th>크리에이터</th><th>비즈니스</th></tr>
+<tr><td>트렌딩 음원</td><td class="yes">✅ 전곡</td><td class="no">❌ 상업용만</td></tr>
+<tr><td>프로필 링크</td><td>1,000 팔로워부터</td><td>즉시</td></tr>
+<tr><td>Spark Ads</td><td class="yes">✅ 가능</td><td class="yes">✅ 가능</td></tr>
+</table>
+<p style="font-size:13.5px;color:var(--dim);margin:14px 0 0">카메라 앱은 트렌딩 사운드가 오가닉 도달의 핵심. 링크 하나 얻자고 그걸 버리면 손해입니다.<br>→ <b style="color:#fff">크리에이터 계정 유지</b>, 광고는 business.tiktok.com에서 별도 집행, 우리 영상은 <b style="color:#fff">Spark Ads 권한 코드</b>로 밀기.<br>→ 틱톡 핸들은 <b style="color:#fff">30일에 1회만</b> 변경 가능하니 처음에 확정.</p>
+</div>
+
+<h2>4 · 이미지 스펙</h2>
+<div class="card">
+<table>
+<tr><th>용도</th><th>사이즈</th><th>주의</th></tr>
+<tr><td>프로필 사진</td><td>1080×1080</td><td>원형 크롭 · ⌀110px에서 판독 확인</td></tr>
+<tr><td>인스타 피드</td><td>1080×1350</td><td>그리드는 1:1 크롭 → 상하 15% 여백</td></tr>
+<tr><td>릴스 / 스토리</td><td>1080×1920</td><td>상단 250 · 하단 420px UI 가림</td></tr>
+<tr><td>릴스 커버</td><td>1015×1350 영역</td><td>이 영역만 그리드 노출</td></tr>
+<tr><td>하이라이트 커버</td><td>1080×1920</td><td>중앙 ⌀150px 안에 아이콘</td></tr>
+<tr><td>틱톡 영상</td><td>1080×1920</td><td>상단 130 · 하단 480px UI 가림</td></tr>
+<tr><td>틱톡 커버</td><td>중앙 1:1.3</td><td>하단 150px에 조회수 겹침</td></tr>
+</table>
+</div>
+
+<h2>5 · 광고 전 워밍업 14일</h2>
+<div class="card">
+<table>
+<tr><th>일차</th><th>할 일</th></tr>
+<tr><td>D-14</td><td>계정 생성 → 2FA → 프사만 등록</td></tr>
+<tr><td>D-13</td><td>이름·바이오·카테고리, 비즈니스 전환(인스타만)</td></tr>
+<tr><td>D-12~4</td><td>하루 1개씩 게시 → 9칸 채우기 (릴스 4 + 이미지 5)</td></tr>
+<tr><td>D-7</td><td>메타 자산 연결 · SKAN 설정</td></tr>
+<tr><td>D-5</td><td>액션 버튼 + 어트리뷰션 링크 테스트</td></tr>
+<tr><td>D-3</td><td>피드 12칸 완성 · 하이라이트 5개</td></tr>
+<tr><td>D-2</td><td>1만원 테스트 광고 → 계정 정상 확인</td></tr>
+<tr><td>D-Day</td><td>본 캠페인 시작</td></tr>
+</table>
+<p style="font-size:13px;color:#ff9b9b;margin:16px 0 0"><b>절대 금지</b> — 생성 당일 광고 / 광고 시작 후 핸들 변경 / 팔로워 구매 / 두 계정 같은 소재 재사용 / 틱톡 워터마크 영상을 릴스에 업로드</p>
+</div>
+
+<h2>6 · 하이라이트</h2>
+<div class="card">
+<table>
+<tr><th>얼짱캠</th><td>사용법 · 필터 · 움짤 · 리그램 · 업데이트<br><span style="color:var(--dim);font-size:12px">커버: 앰버 배경 + 네이비 픽셀 아이콘</span></td></tr>
+<tr><th>키라키라</th><td>사용법 · 보정 · 네컷 · 스티커 · 리그램<br><span style="color:var(--dim);font-size:12px">커버: 라임 배경 + 검정 아이콘 + 흰 테두리</span></td></tr>
+</table>
+</div>
+
+<footer>
+  이미지 원본 · GitHub <code>hipergroup/haduri-cam</code> / <code>hipergroup/kirakira</code> AppIcon 1024px<br>
+  생성일 2026-08-19 · 계정 생성 후 이 페이지를 삭제하세요
+</footer>
+
+</div>
+<script>
+document.querySelectorAll('[data-c]').forEach(function(el){
+  el.addEventListener('click',function(){
+    var t=el.getAttribute('data-c');
+    navigator.clipboard.writeText(t).then(function(){
+      if(el.tagName==='BUTTON'){var o=el.textContent;el.textContent='✓ 복사됨';el.classList.add('done');
+        setTimeout(function(){el.textContent=o;el.classList.remove('done')},1200);}
+      else{el.style.borderColor='#1d7a3f';setTimeout(function(){el.style.borderColor=''},900);}
+    });
+  });
+});
+</script>
+</body>
+</html>
